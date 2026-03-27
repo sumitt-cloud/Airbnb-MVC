@@ -2,10 +2,10 @@ const express = require("express");
 
 const hostrouter = express.Router();
 
-const homescontroller =  require('../controllers/homes')
+const hostcontroller =  require('../controllers/storecontroller')
 
-hostrouter.get("/host/add-home",  homescontroller.getaddhome)
+hostrouter.get("add-home",  hostcontroller.getaddhome)
 
-hostrouter.post("/host/add-home", homescontroller.postaddhome)
+hostrouter.post("add-home", hostcontroller.postaddhome)
 
-exports.hostrouter = hostrouter;
+module.exports = hostrouter;

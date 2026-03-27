@@ -16,16 +16,9 @@ exports.postaddhome = (req, res, next) => {
   home.save()
 
   
-  res.render("host/homeAdded", {
+  res.render("host/home-Added", {
     pagetitle: "Homeadded successfully",
     currentpage: "homeadded",
   });
 }
 
-exports.gethome = (req,res,next) =>{
- Home.fetchall( (registeredhomes) =>{
-    res.render('store/home-list',{registeredhomes,pagetitle:'airbndHome', currentpage:'Home'
-    })
-  })
-
-}

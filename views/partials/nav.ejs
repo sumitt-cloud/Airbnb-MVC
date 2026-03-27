@@ -20,6 +20,15 @@
       </li>
 
       <li>
+        <a href="/bookings"
+          class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
+          <%= currentpage === 'addhome' 
+            ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
+            : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
+         Bookings
+        </a>
+      </li>
+      <li>
         <a href="/host/add-home"
           class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
           <%= currentpage === 'addhome' 
