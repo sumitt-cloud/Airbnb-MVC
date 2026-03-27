@@ -12,13 +12,33 @@
       <li>
         <a href="/"
           class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
+          <%= currentpage === 'index' 
+            ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
+            : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
+          Airbnb
+        </a>
+      </li>
+      <li>
+        <a href="/home"
+          class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
           <%= currentpage === 'Home' 
             ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
             : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
-          Home
+          Home-list
         </a>
       </li>
 
+      <li>
+        <a href="/favourite"
+          class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
+          <%= currentpage === 'favourite' 
+            ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
+            : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
+         Favourite-list
+
+        </a>
+      </li>
+      
       <li>
         <a href="/bookings"
           class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
