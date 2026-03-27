@@ -1,0 +1,35 @@
+<header class="sticky top-0 z-50 backdrop-blur-lg bg-transparent border-b border-gray-200">
+  <nav class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+
+    <!-- Logo -->
+    <h1 class="text-3xl font-extrabold \ from-pink-500 to-rose-400 bg-clip-text text-transparent tracking-wide cursor-pointer" >
+      Airbnb
+    </h1>
+
+    <!-- Nav Links -->
+    <ul class="flex items-center gap-8">
+
+      <li>
+        <a href="/"
+          class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
+          <%= currentpage === 'Home' 
+            ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
+            : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="/host/add-home"
+          class="relative px-5 py-2 rounded-full font-medium transition-all duration-300
+          <%= currentpage === 'addhome' 
+            ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white shadow-md scale-105' 
+            : 'text-gray-700 hover:text-pink-500 hover:bg-pink-50' %>">
+          Add Home
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+</header>

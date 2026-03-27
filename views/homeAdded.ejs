@@ -1,0 +1,49 @@
+<%- include('partials/Head') %>
+<link rel="stylesheet" href="/output.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex items-center justify-center min-h-screen">
+
+  <%- include('partials/nav') %>
+
+  <!-- Success Card -->
+  <div class="bg-white shadow-2xl rounded-3xl p-10 max-w-md w-full text-center">
+
+    <!-- Icon -->
+    <div class="flex justify-center mb-6">
+      <div class="bg-green-100 text-green-600 p-4 rounded-full text-3xl">
+        ✔
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold mb-3">
+      Home Registered Successfully 🎉
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-gray-500 mb-6">
+      Your property has been added and is now live for users to explore.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex gap-4 justify-center">
+
+      <!-- Back Home -->
+      <a href="/" 
+         class="px-5 py-2 rounded-xl bg-gray-200 hover:bg-gray-300 transition">
+        Go Home
+      </a>
+
+      <!-- View Listings -->
+      <a href="/" 
+         class="px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-red-500 text-white hover:scale-105 transition shadow-md">
+        View Homes
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
