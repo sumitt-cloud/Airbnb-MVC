@@ -24,7 +24,7 @@ exports.postaddhome = (req, res, next) => {
 
 exports.gethome = (req,res,next) =>{
  Home.fetchall( (registeredhomes) =>{
-    res.render('store/homelist',{registeredhomes,pagetitle:'airbndHome', currentpage:'Home'
+    res.render('store/home-list',{registeredhomes,pagetitle:'airbndHome', currentpage:'Home'
     })
   })
 
